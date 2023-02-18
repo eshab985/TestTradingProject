@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form action = "download" method = "POST">
+    {% csrf_token %}
+    Enter Timeframe: <input  type="text" name="timeframe"><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
